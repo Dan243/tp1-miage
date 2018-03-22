@@ -1,27 +1,7 @@
-# Pré-requis 
-* Disposer d'au moins un compte github par binome
-* Apporter son portable (les postes de l'université n'ont pas accès au proxy depuis Eclipse). Pas de préférence pour l'OS (Linux, OSX ou Windows).
-* Disposer d'un accès internet (université ou data)
-* JDK 8 ou 9
-* Eclipse recent (de préférence Oxygen) installé
-* Plugins Eclipse à installer : infinitest, natural (chercher "cucumber")
-* Si possible, utiliser votre connection Internet (data).
-* Si et seulement si vous passez par le proxy de l'université, configurer votre Eclipse (Window-> Preferences -> chercher 'proxy") et votre conf maven  `~/.m2/settings.xml` :
-```
-<settings>
-  <proxies>
-    <proxy>
-      <id>univ-nantes</id>
-      <active>true</active>
-      <protocol>http</protocol>
-        <host>xxx</host>
-	<port>3128</port>
-     </proxy>
-    </proxies>
-</settings>
-```
-* Forker sur Github le projet `bflorat/tp1-miage` puis cloner votre dépôt Github dans votre workspace
-* Dans le `README.md` de votre projet, mentionner votre nom et celui de votre binome __(ne pas oublier !)__
+
+
+Le nom de notre binome est : Dan MONUNU et Jean-Philippe N'GUESSAN
+
 
 # Déroulement du TP
 Nous fournissons trois projets Eclipse servant de base de travail aux exercices suivant. Cela permet un point de synchronisation de tous les étudiants à différents moments du TP. 
