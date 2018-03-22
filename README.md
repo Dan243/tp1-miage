@@ -3,26 +3,6 @@
 Le nom de notre binome est : Dan MONUNU et Jean-Philippe N'GUESSAN
 
 # Exercice 3 - Injection de dépendances avec Guice
-_Temps estimé : 20 mins_
-
-Point de synchro : repartir du projet fourni `mailreader-ex3-ini`
-
-Guice est le framework d'injection de dépendance en Java de Google. Il est léger et la configuration se fait en java (et non par fichier XML ou par annotations). Ses concurrents en Java sont principalement Spring Core et CDI dans le monde JEE. Ce pattern est également présent dans la plupart des languages, comme dans Symphony en PHP ou AngularJS en JavaScript.
-
-La méthode `configure()` de la classe `MailReaderModule` contient la configuration de Guice. C'est ici qu'on associe une interface à la classe contrète qui sera injectée. Exemple :
-```
-bind(MonInterface.class).to(MaClasseConcrete.class)
-```
-Il est bien sûr également possible d'injecter des classes concrètes (comme ici le `MailService`).
-
-1) Compléter la méthode `configure()`
-Observer la méthode `ClientMail.main()` : elle charge la configuration et créé l'objet de haut niveau de l'arbre d'injection : un `InterpreteurLigneCommande`.
-
-2) L'objet `InterpreteurLigneCommande` a besoin d'un `MailService`. Lui injecter (injection par constructeur) via l’annotation (standard java) `@Inject`.
-
-3) Faire de même pour l'injection du `MailSender` dans le `MailService`.
-
-Noter l'arbre d'injection que forme les objets injectés depuis  `InterpreteurLigneCommande`.
 
 Voici notre arbre d'injection :
 
