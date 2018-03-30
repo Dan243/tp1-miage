@@ -20,7 +20,7 @@ _Temps estimé : 40 mins_
 
  5) Nous avons fait la question optionnelle. 
 
-# Nous avons écrit un scénario mailNulstep qui vérifie si un des deux mails est nul, ensuite nous l'avons ajouté dans le feature et nous avons testé et le test passe bien sur Cucumber. Donc vous pouvez aller voir la classe et les features qu'on a rajouté. 
+# Nous avons écrit une classe MailNulstep qui contient les step qui vérifie si un des deux mails est nul. Ensuite, nous avons ajouté les features en utilisant la méthode avec les phrases, enfin nous avons vérifié que les tests passent bien sur Cucumber. Donc vous pouvez aller voir la classe des steps et les features qu'on a rajouté. 
 
 
 
