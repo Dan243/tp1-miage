@@ -8,32 +8,19 @@ Voici notre arbre d'injection :
 
 L'objet InterpreteurLigneCommande a besoin qu'on lui injecte un objet MailService. Et l'objet MailService a besoin qu'on lui injecte un objet MailSender.
 
-InterpreteurLigneCommande ---> MailService ---> MailSender
+# InterpreteurLigneCommande ---> MailService ---> MailSender
 
-# Exercice 4 - TU
-_Temps estimé : 30 mins_
-
-1) Compléter les tests unitaires ou en écrire de nouveaux dans les test cases `MailTest` et `MailComparatorTest`. Enlever les annotations `@Ignore` s'il y en a.
-
-2) Exécuter vos tests si besoin (automatique si vous pratiquez le test continu avec infinitest).
 
 # Exercice 5 - BDD avec Cucumber-jvm
 _Temps estimé : 40 mins_
 
-Point de synchro : repartir du projet fourni `mailreader-ex5-ini`
 
-cucumber-jvm est l'implémentation java de cucumber, un framework de BDD (Behavioral Driven Development) très populaire. Il est existe d'autres : JBehave (l'original, très similaire), Concordion, JGiven ...
+ # 4) Ajouter des cas de test dans la feature `trier_mail.feature` : faut-il ecrire de nouvelles méthodes de test comme en tests unitaires ?
+# Non pour ce cas, il ne faut plus écrire de nouvelles méthodes de test comme en tests unitaires mais juste rajouter les différents tests dans l'exemple en fonction de ce qu'on veut tester.
 
-Pour les besoins du TP, nous utilisons ici les notions de Scenario Outline, de Data Table et de Transformer permettant l'utilisation de données tabulaires et de formats custom.
+# 5) Nous avons fait la question optionnelle. 
 
-1) Compléter la classe `MailComparaisonStep`
-2) Lancer le test `CucumberRunnerTest` en junit
-3) Ouvrir dans un navigateur `target/cucumber/index.html`
-4) Ajouter des cas de test dans la feature `trier_mail.feature` : faut-il ecrire de nouvelles méthodes de test comme en tests unitaires ?
+# Nous avons écrit un scénario mailNulstep qui vérifie si un des deux mails est nul, ensuite nous l'avons ajouté dans le feature et nous avons testé et le test passe bien sur Cucumber. Donc vous pouvez aller voir la classe et les features qu'on a rajouté. 
 
-5) optionnel :
-Ecrire un scenario simple au format textuel et les steps correspondants.
 
-# Cleanup
-Si vous le désirez, vous pourrez supprimer votre projet github mais pas avant fin juin (noté)
 
